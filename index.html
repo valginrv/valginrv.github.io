@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valgin R V | Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">V.RV</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="download-cv" id="downloadCV"><i class="fas fa-download"></i> Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+            <li><a href="#" class="download-cv" id="downloadCVMobile" style="margin-top: 1rem;"><i
+                        class="fas fa-download"></i> Download CV</a></li>
+        </ul>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="gradient-text">Valgin R V</span></h1>
+                <div class="hero-subtitle">Full Stack Developer</div>
+                <p class="hero-description">Crafting exceptional digital experiences with Angular, Node.js, and MongoDB.
+                    Specialized in building scalable, high-performance web applications that drive business growth.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fas fa-briefcase"></i> View Work</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Tech Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-tag">TECHNICAL EXPERTISE</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-description">Specialized in modern web development with expertise across the full stack
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-angular skill-icon"></i>
+                <h3 class="skill-name">Angular</h3>
+                <p class="skill-level">TypeScript, NGXS, RxJS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js skill-icon"></i>
+                <h3 class="skill-name">Node.js</h3>
+                <p class="skill-level">Express.js, REST APIs</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3 class="skill-name">MongoDB</h3>
+                <p class="skill-level">NoSQL, Aggregation</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3 class="skill-name">SQL</h3>
+                <p class="skill-level">MySQL, PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square skill-icon"></i>
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-level">ES6+, Async/Await</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3 class="skill-name">HTML5</h3>
+                <p class="skill-level">Semantic, Accessible</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3 class="skill-name">CSS3</h3>
+                <p class="skill-level">Responsive, Flexbox</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-aws skill-icon"></i>
+                <h3 class="skill-name">AWS</h3>
+                <p class="skill-level">Cloud Computing</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-header">
+            <span class="section-tag">CAREER JOURNEY</span>
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-description">Growing through challenges and delivering impactful solutions</p>
+        </div>
+        <div class="experience-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2025 - Present</span>
+                        <h3 class="timeline-title">Software Engineer L2</h3>
+                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
+                        <p>Leading development of complex web applications with Angular and Node.js. Mentoring junior
+                            developers and implementing best practices for code quality and performance optimization.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">May 2024 - Dec 2024</span>
+                        <h3 class="timeline-title">Software Engineer L1</h3>
+                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
+                        <p>Developed scalable web applications, integrated RESTful APIs, and enhanced UI/UX designs.
+                            Collaborated with cross-functional teams to deliver high-quality solutions.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2024 - May 2024</span>
+                        <h3 class="timeline-title">Software Trainee</h3>
+                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
+                        <p>Intensive training in full-stack development. Built foundational skills in Angular, Node.js,
+                            and database management while contributing to team projects.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">PORTFOLIO</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">Showcasing innovative solutions and technical expertise</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">Full-featured e-commerce solution with real-time inventory
+                        management, payment integration, and admin dashboard.</p>
+                    <div class="project-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Project Management Tool</h3>
+                    <p class="project-description">Collaborative project management application with task tracking, team
+                        collaboration, and reporting features.</p>
+                    <div class="project-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">Real-time analytics platform with interactive visualizations, data
+                        processing, and custom reporting capabilities.</p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">Have a project in mind? Let's create something amazing together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:9003261783">9003261783</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:valginajay0@gmail.com">valginajay0@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/valginrv2001"
+                                target="_blank">linkedin.com/in/valginrv2001</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;"><i
+                            class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">&copy; 2026 Valgin R V. All Rights Reserved.</p>
+        <p style="color: rgba(255, 255, 255, 0.6);">Designed & Developed with <i class="fas fa-heart"
+                style="color: #ef4444;"></i></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/valginrv2001" target="_blank" class="social-link"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/valginrv2001" target="_blank" class="social-link"><i
+                    class="fab fa-github"></i></a>
+            <a href="mailto:valginajay0@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            <a href="tel:9003261783" class="social-link"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
