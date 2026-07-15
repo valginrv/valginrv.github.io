@@ -1,328 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valgin R V | Full Stack Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valgin R V — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="particles" id="particles"></div>
-    <div class="overlay" id="overlay"></div>
 
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">V.RV</div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="download-cv" id="downloadCV"><i class="fas fa-download"></i> Download CV</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar" id="navbar">
+  <div class="nav-content">
+    <a href="#home" class="logo">v_rv<span class="cursor">_</span></a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links">
+      <li><a href="#home"><span class="nav-num">01</span>home</a></li>
+      <li><a href="#stack"><span class="nav-num">02</span>stack</a></li>
+      <li><a href="#log"><span class="nav-num">03</span>log</a></li>
+      <li><a href="#builds"><span class="nav-num">04</span>builds</a></li>
+      <li><a href="#connect"><span class="nav-num">05</span>connect</a></li>
+      <li><a href="Valgin_RV_Resume.pdf" target="_blank" class="resume-btn"><i class="fas fa-file-arrow-down"></i> resume.pdf</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="mobile-nav" id="mobileNav">
-        <ul>
-            <li><a href="#home" class="mobile-link">Home</a></li>
-            <li><a href="#skills" class="mobile-link">Skills</a></li>
-            <li><a href="#experience" class="mobile-link">Experience</a></li>
-            <li><a href="#projects" class="mobile-link">Projects</a></li>
-            <li><a href="#contact" class="mobile-link">Contact</a></li>
-           <!-- In the navbar -->
-<li><a href="Valgin_RV_Resume.pdf" target="_blank" class="view-cv" style="margin-right: 10px;">
-    <i class="fas fa-eye"></i> View CV
-</a></li>
-<li><a href="#" class="download-cv" id="downloadCV">
-    <i class="fas fa-download"></i> Download CV
-</a></li>
-        </ul>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#home" class="mobile-link">home</a></li>
+    <li><a href="#stack" class="mobile-link">stack</a></li>
+    <li><a href="#log" class="mobile-link">log</a></li>
+    <li><a href="#builds" class="mobile-link">builds</a></li>
+    <li><a href="#connect" class="mobile-link">connect</a></li>
+    <li><a href="Valgin_RV_Resume.pdf" target="_blank" class="mobile-link resume-link">resume.pdf ↓</a></li>
+  </ul>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="eyebrow">// full stack developer · MEAN · chennai, in</p>
+      <h1>Valgin&nbsp;R&nbsp;V builds the<br><span class="gradient-text">whole request</span>,<br>not just the view.</h1>
+      <p class="hero-description">2.7 years shipping production features on <strong>Jinzcart</strong>, an e-commerce
+        platform — product catalogues, role-based access, invoicing and reporting — end to end,
+        from Angular components down to MongoDB queries.</p>
+      <div class="hero-buttons">
+        <a href="#connect" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's talk</a>
+        <a href="#builds" class="btn btn-secondary"><i class="fas fa-diagram-project"></i> See builds</a>
+      </div>
     </div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm <span class="gradient-text">Valgin R V</span></h1>
-                <div class="hero-subtitle">Full Stack Developer</div>
-                <p class="hero-description">Crafting exceptional digital experiences with Angular, Node.js, and MongoDB.
-                    Specialized in building scalable, high-performance web applications that drive business growth.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
-                    <a href="#projects" class="btn btn-secondary"><i class="fas fa-briefcase"></i> View Work</a>
-                </div>
-            </div>
-            <div class="hero-card">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="profile-stats">
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Exp.</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">8+</span>
-                            <span class="stat-label">Tech Stack</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="terminal" id="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot amber"></span><span class="dot mint"></span>
+        <span class="terminal-title">valgin@jinsoftz:~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+</section>
 
-    <section id="skills">
-        <div class="section-header">
-            <span class="section-tag">TECHNICAL EXPERTISE</span>
-            <h2 class="section-title">Skills & Technologies</h2>
-            <p class="section-description">Specialized in modern web development with expertise across the full stack
-            </p>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-angular skill-icon"></i>
-                <h3 class="skill-name">Angular</h3>
-                <p class="skill-level">TypeScript, NGXS, RxJS</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js skill-icon"></i>
-                <h3 class="skill-name">Node.js</h3>
-                <p class="skill-level">Express.js, REST APIs</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database skill-icon"></i>
-                <h3 class="skill-name">MongoDB</h3>
-                <p class="skill-level">NoSQL, Aggregation</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database skill-icon"></i>
-                <h3 class="skill-name">SQL</h3>
-                <p class="skill-level">MySQL, PostgreSQL</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js-square skill-icon"></i>
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-level">ES6+, Async/Await</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-html5 skill-icon"></i>
-                <h3 class="skill-name">HTML5</h3>
-                <p class="skill-level">Semantic, Accessible</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt skill-icon"></i>
-                <h3 class="skill-name">CSS3</h3>
-                <p class="skill-level">Responsive, Flexbox</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-aws skill-icon"></i>
-                <h3 class="skill-name">AWS</h3>
-                <p class="skill-level">Cloud Computing</p>
-            </div>
-        </div>
-    </section>
+<section id="stack">
+  <div class="section-header">
+    <span class="section-tag">01 · the stack</span>
+    <h2 class="section-title">Every layer, hands-on</h2>
+    <p class="section-description">Click a layer to expand what's actually inside it.</p>
+  </div>
 
-    <section id="experience">
-        <div class="section-header">
-            <span class="section-tag">CAREER JOURNEY</span>
-            <h2 class="section-title">Professional Experience</h2>
-            <p class="section-description">Growing through challenges and delivering impactful solutions</p>
-        </div>
-        <div class="experience-container">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2025 - Present</span>
-                        <h3 class="timeline-title">Software Engineer L2</h3>
-                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
-                        <p>Leading development of complex web applications with Angular and Node.js. Mentoring junior
-                            developers and implementing best practices for code quality and performance optimization.
-                        </p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2024 - Dec 2024</span>
-                        <h3 class="timeline-title">Software Engineer L1</h3>
-                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
-                        <p>Developed scalable web applications, integrated RESTful APIs, and enhanced UI/UX designs.
-                            Collaborated with cross-functional teams to deliver high-quality solutions.</p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">Feb 2024 - May 2024</span>
-                        <h3 class="timeline-title">Software Trainee</h3>
-                        <p class="timeline-company">JINSoftz Technology Private Limited</p>
-                        <p>Intensive training in full-stack development. Built foundational skills in Angular, Node.js,
-                            and database management while contributing to team projects.</p>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="layers" id="layers">
+    <div class="layer" data-layer="frontend">
+      <div class="layer-head">
+        <span class="layer-index">L4</span>
+        <span class="layer-name">Frontend</span>
+        <span class="layer-desc">what the user touches</span>
+        <i class="fas fa-chevron-down layer-chevron"></i>
+      </div>
+      <div class="layer-body">
+        <span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">RxJS</span>
+        <span class="chip">NGXS</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+        <span class="chip">Bootstrap</span><span class="chip">Responsive UI/UX</span>
+      </div>
+    </div>
+    <div class="layer" data-layer="backend">
+      <div class="layer-head">
+        <span class="layer-index">L3</span>
+        <span class="layer-name">Backend</span>
+        <span class="layer-desc">where the logic lives</span>
+        <i class="fas fa-chevron-down layer-chevron"></i>
+      </div>
+      <div class="layer-body">
+        <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST APIs</span>
+        <span class="chip">Nodemailer</span><span class="chip">Nodemon</span><span class="chip">API Integration</span>
+      </div>
+    </div>
+    <div class="layer" data-layer="database">
+      <div class="layer-head">
+        <span class="layer-index">L2</span>
+        <span class="layer-name">Database</span>
+        <span class="layer-desc">where the truth is stored</span>
+        <i class="fas fa-chevron-down layer-chevron"></i>
+      </div>
+      <div class="layer-body">
+        <span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">SQL</span>
+        <span class="chip">Schema &amp; Query Design</span>
+      </div>
+    </div>
+    <div class="layer" data-layer="tools">
+      <div class="layer-index">L1</div>
+      <div class="layer-head">
+        <span class="layer-index">L1</span>
+        <span class="layer-name">Tooling</span>
+        <span class="layer-desc">how it ships</span>
+        <i class="fas fa-chevron-down layer-chevron"></i>
+      </div>
+      <div class="layer-body">
+        <span class="chip">Git &amp; GitHub</span><span class="chip">Jira</span><span class="chip">Postman</span>
+        <span class="chip">AWS</span><span class="chip">VS Code</span><span class="chip">npm</span><span class="chip">Agile/Scrum</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="projects">
-        <div class="section-header">
-            <span class="section-tag">PORTFOLIO</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">Showcasing innovative solutions and technical expertise</p>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">E-Commerce Platform</h3>
-                    <p class="project-description">Full-featured e-commerce solution with real-time inventory
-                        management, payment integration, and admin dashboard.</p>
-                    <div class="project-tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-tasks"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Project Management Tool</h3>
-                    <p class="project-description">Collaborative project management application with task tracking, team
-                        collaboration, and reporting features.</p>
-                    <div class="project-tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">SQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Analytics Dashboard</h3>
-                    <p class="project-description">Real-time analytics platform with interactive visualizations, data
-                        processing, and custom reporting capabilities.</p>
-                    <div class="project-tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="log">
+  <div class="section-header">
+    <span class="section-tag">02 · the commit log</span>
+    <h2 class="section-title">Career, as a git log</h2>
+    <p class="section-description">git log --author="valgin" --oneline --reverse</p>
+  </div>
 
-    <section id="contact">
-        <div class="section-header">
-            <span class="section-tag">GET IN TOUCH</span>
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="section-description">Have a project in mind? Let's create something amazing together</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Phone</h4>
-                        <p><a href="tel:9003261783">9003261783</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p><a href="mailto:valginajay0@gmail.com">valginajay0@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Location</h4>
-                        <p>Chennai, Tamil Nadu, India</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com/in/valginrv2001"
-                                target="_blank">linkedin.com/in/valginrv2001</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Your Email</label>
-                        <input type="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea placeholder="Tell me about your project..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;"><i
-                            class="fas fa-paper-plane"></i> Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <div class="gitlog">
+    <div class="commit">
+      <div class="commit-meta">
+        <span class="hash">a13f9c2</span>
+        <span class="branch"><i class="fas fa-code-branch"></i> l2</span>
+        <span class="date">Jan 2025 → present</span>
+      </div>
+      <h3 class="commit-title">Software Engineer L2 — promoted from L1</h3>
+      <p class="commit-company">JINSoftz Technology Private Limited, Chennai</p>
+      <ul>
+        <li>Owned product management, user-role, invoicing and reporting modules on Jinzcart</li>
+        <li>Built scalable Angular + Node.js + Express + MongoDB features end to end</li>
+        <li>Introduced NGXS state management across multiple interlinked modules</li>
+        <li>Shipped Nodemailer-driven order confirmations and automated notifications</li>
+        <li>Ran sprint planning and code reviews alongside QA in an Agile team</li>
+      </ul>
+    </div>
+    <div class="commit">
+      <div class="commit-meta">
+        <span class="hash">6e2b8d0</span>
+        <span class="branch"><i class="fas fa-code-branch"></i> l1</span>
+        <span class="date">May 2024 → Dec 2024</span>
+      </div>
+      <h3 class="commit-title">Software Engineer L1</h3>
+      <p class="commit-company">JINSoftz Technology Private Limited, Chennai</p>
+      <ul>
+        <li>Built reusable Angular components for a consistent UI across apps</li>
+        <li>Implemented responsive interfaces with Angular, TypeScript, HTML5, CSS3, Bootstrap</li>
+        <li>Designed and tested REST APIs in Express.js and Node.js against real business needs</li>
+        <li>Handled MySQL and MongoDB CRUD operations and data management</li>
+      </ul>
+    </div>
+    <div class="commit">
+      <div class="commit-meta">
+        <span class="hash">0f4a11e</span>
+        <span class="branch"><i class="fas fa-code-branch"></i> trainee</span>
+        <span class="date">Feb 2024 → May 2024</span>
+      </div>
+      <h3 class="commit-title">Software Trainee</h3>
+      <p class="commit-company">JINSoftz Technology Private Limited, Chennai</p>
+      <ul>
+        <li>Trained across the full MEAN stack — Angular, Node.js, Express.js, MongoDB</li>
+        <li>Shipped first practice applications following the real dev workflow</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">&copy; 2026 Valgin R V. All Rights Reserved.</p>
-        <p style="color: rgba(255, 255, 255, 0.6);">Designed &amp; Developed with ❤️ by Valgin</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/valginrv2001" target="_blank" class="social-link"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/valginrv2001" target="_blank" class="social-link"><i
-                    class="fab fa-github"></i></a>
-            <a href="mailto:valginajay0@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-            <a href="tel:9003261783" class="social-link"><i class="fas fa-phone"></i></a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+<section id="builds">
+  <div class="section-header">
+    <span class="section-tag">03 · builds</span>
+    <h2 class="section-title">Selected endpoints</h2>
+    <p class="section-description">Academic and guided projects, documented like an API</p>
+  </div>
+
+  <div class="builds-grid">
+    <article class="build-card">
+      <div class="build-route"><span class="method get">GET</span><span class="path">/vehicle-repair/bookings</span></div>
+      <h3>Online Vehicle Repair System</h3>
+      <p>Web platform for booking vehicle repairs and tracking service status, with a fully responsive layout.</p>
+      <div class="build-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
+      <span class="build-footnote">Final year project</span>
+    </article>
+    <article class="build-card">
+      <div class="build-route"><span class="method post">POST</span><span class="path">/plasma-donor/match</span></div>
+      <h3>Plasma Donor Web Application</h3>
+      <p>Connects plasma donors with patients in health emergencies, built as a guided IBM project.</p>
+      <div class="build-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <span class="build-footnote">IBM guided project</span>
+    </article>
+    <article class="build-card">
+      <div class="build-route"><span class="method put">PUT</span><span class="path">/passport/application</span></div>
+      <h3>Passport Automation System</h3>
+      <p>Streamlines passport applications and status tracking with automated workflows.</p>
+      <div class="build-tags"><span>PHP</span><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+      <span class="build-footnote">Mini project</span>
+    </article>
+  </div>
+</section>
+
+<section id="connect">
+  <div class="section-header">
+    <span class="section-tag">04 · connect</span>
+    <h2 class="section-title">Open a connection</h2>
+    <p class="section-description">Reachable through any of these channels</p>
+  </div>
+
+  <div class="connect-grid">
+    <a class="connect-card" href="tel:+919003261783">
+      <i class="fas fa-phone-alt"></i>
+      <div><span class="connect-label">phone</span><span class="connect-value">+91 90032 61783</span></div>
+    </a>
+    <a class="connect-card" href="mailto:valginajay0@gmail.com">
+      <i class="fas fa-envelope"></i>
+      <div><span class="connect-label">email</span><span class="connect-value">valginajay0@gmail.com</span></div>
+    </a>
+    <a class="connect-card" href="https://www.linkedin.com/in/valginrv2001" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      <div><span class="connect-label">linkedin</span><span class="connect-value">/in/valginrv2001</span></div>
+    </a>
+    <a class="connect-card" href="https://github.com/valginrv" target="_blank">
+      <i class="fab fa-github"></i>
+      <div><span class="connect-label">github</span><span class="connect-value">/valginrv</span></div>
+    </a>
+    <div class="connect-card static">
+      <i class="fas fa-map-marker-alt"></i>
+      <div><span class="connect-label">location</span><span class="connect-value">Chennai, Tamil Nadu, India</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Valgin R V — status: <span class="status-ok">200 available for work</span></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
-
 </html>
-
