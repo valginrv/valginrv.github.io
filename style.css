@@ -280,6 +280,13 @@ section { padding: 6rem 2.5rem; max-width: 1200px; margin: 0 auto; }
   transition: all 0.3s;
 }
 .build-card:hover { border-color: var(--amber); transform: translateY(-5px); }
+.build-card--featured {
+  grid-column: 1 / -1;
+  border-color: var(--mint);
+  background: linear-gradient(135deg, var(--ink-2), var(--ink-3));
+}
+.build-card--featured:hover { border-color: var(--mint); }
+.build-card--featured h3 { font-size: 1.4rem; }
 .build-route { display: flex; gap: 0.6rem; align-items: center; margin-bottom: 1rem; font-family: var(--font-mono); font-size: 0.82rem; }
 .method { padding: 0.2rem 0.55rem; border-radius: 5px; font-weight: 700; color: var(--ink); }
 .method.get { background: var(--mint); }
